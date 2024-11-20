@@ -1,0 +1,31 @@
+{
+    "name": "azure-function-app",
+    "version": "1.0.0",
+    "description": "Azure Function App for user registration with SQL integration",
+    "scripts": {
+      "start": "func start",
+      "test": "echo \"No test specified\" && exit 1",
+      "deploy": "func azure functionapp publish <YOUR_FUNCTION_APP_NAME>",
+      "lint": "eslint ."
+    },
+    "dependencies": {
+      "dotenv": "^16.3.1",
+      "mssql": "^9.0.1"
+    },
+    "devDependencies": {
+      "eslint": "^8.51.0",
+      "nodemon": "^3.0.1"
+    },
+    "engines": {
+      "node": ">=16.0.0"
+    },
+    "keywords": [
+      "azure",
+      "function",
+      "sql",
+      "user-registration"
+    ],
+    "author": "Your Name",
+    "license": "MIT"
+  }
+  
