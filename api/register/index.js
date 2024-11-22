@@ -22,11 +22,17 @@ module.exports = async function (context, req) {
         status: 200,
         body: "omg",
       };
+    } else if (action === "test2" && req.method === "GET") {
+      context.res = {
+        status: 200,
+        body: "omg2",
+      };
     } else {
       context.res = {
         status: 404,
         body: "Route not found.",
       };
     }
+    
   };
   
